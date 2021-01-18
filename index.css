@@ -4,10 +4,13 @@
     url("./assets/mobile/bg-image-daytime.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-color: aqua;
   height: 100vh;
   box-sizing: border-box;
+  color: #ffffff;
+  font-family: "Inter", sans-serif;
 }
+
+/* quote section styles */
 
 .quote-container {
   padding: 20px;
@@ -19,22 +22,92 @@
 }
 
 .fa-sync {
-  color: #ffffff;
   margin-top: 7px;
   opacity: 0.6;
 }
 
-.quote,
 .quote-author {
-  font-family: "Inter", sans-serif;
-  color: #ffffff;
+  font-size: 18px;
 }
 
 .quote {
   font-size: 15px;
   letter-spacing: 0.5;
-  font-weight: 300;
   margin-bottom: 20px;
   line-height: 28px;
-  font-weight: 300;
+  font-weight: 100;
+}
+
+/* time and location section */
+
+.time-location-container {
+  padding: 200px 30px 30px 30px;
+}
+
+.greeting-icon-container {
+  display: flex;
+}
+
+.fa-sun {
+  margin-right: 10px;
+}
+
+.greeting {
+  letter-spacing: 5px;
+  font-weight: 100;
+}
+
+.time-container {
+  display: flex;
+  margin: 5px 0 5px 0;
+  align-items: baseline;
+}
+
+.time {
+  font-size: 100px;
+  font-weight: bold;
+}
+
+.time-zone,
+.location {
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+
+.time-zone {
+  font-weight: 100;
+}
+
+.more-info-button {
+  background-color: #ddd;
+  border: none;
+  color: #000000;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 40px;
+  cursor: pointer;
+  border-radius: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.arrow-down-background {
+  background-color: #000000;
+  height: 20px;
+  width: 20px;
+  border-radius: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.fa-chevron-down {
+  color: #ffffff;
+}
+
+.more-less-text {
+  text-transform: uppercase;
+  margin-right: 5px;
 }
