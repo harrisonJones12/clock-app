@@ -1,9 +1,19 @@
-const moreLessButton = document.getElementById('more-less-button');
+const moreLessButton = document.getElementById("more-less-button");
 
-// const handleInfoButtonClick = () => {
-//     moreLessButton.
-// }
+const buttonText = document.getElementById("button-text");
 
-console.log('class-list', moreLessButton.classList);
+const arrowIcon = document.getElementById("arrow-icon");
 
-// moreLessButton.addEventListener()
+const handleInfoButtonClick = () => {
+  if(buttonText.innerHTML === "more") {
+    buttonText.innerHTML = "less";
+    arrowIcon.className = 'fas fa-chevron-up'
+} else {  
+  buttonText.innerHTML = "more";
+  arrowIcon.className = 'fas fa-chevron-down'
+}
+};
+
+moreLessButton.addEventListener("click", handleInfoButtonClick);
+
+

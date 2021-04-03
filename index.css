@@ -78,7 +78,11 @@
   font-weight: 100;
 }
 
-.more-less-info-button-closed {
+.more-less-info-button:hover {
+  opacity: 0.4;
+}
+
+.more-less-info-button {
   background-color: #ddd;
   border: none;
   color: #000000;
@@ -103,7 +107,8 @@
   justify-content: center;
 }
 
-.fa-chevron-down {
+.fa-chevron-down,
+.fa-chevron-up {
   color: #ffffff;
 }
 
