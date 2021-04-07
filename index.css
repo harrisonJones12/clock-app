@@ -46,15 +46,17 @@
 
 .greeting-icon-container {
   display: flex;
+  align-items: center;
 }
 
-.fa-sun {
+.sun-icon {
   margin-right: 10px;
 }
 
 .greeting {
   letter-spacing: 5px;
   font-weight: 100;
+  text-transform: uppercase;
 }
 
 .time-container {
@@ -86,15 +88,38 @@
   background-color: #ddd;
   border: none;
   color: #000000;
-  padding: 10px 20px;
+  /* padding: 10px 20px; */
   text-align: center;
   text-decoration: none;
-  display: inline-block;
   margin-top: 40px;
   cursor: pointer;
   border-radius: 40px;
   display: flex;
   align-items: center;
+  height: 56px;
+  width: 146px;
+  justify-content: center;
+  overflow: visible;
+}
+
+.more-less-info-button .more-less-text {
+  letter-spacing: 5px;
+  font-weight: bold;
+  font-size: 16px;
+  opacity: 0.5;
+  width: 63px;
+  margin-right: 13px;
+}
+
+.arrow-button-container {
+  transform: rotate(180deg);
+  transition: transform, 0.2s;
+  overflow: visible;
+}
+
+.arrow-rotated {
+  transform: rotate(360deg);
+  transition: transform, 0.2s;
 }
 
 .arrow-down-background {
@@ -115,4 +140,5 @@
 .more-less-text {
   text-transform: uppercase;
   margin-right: 5px;
+  margin-left: 17px;
 }
