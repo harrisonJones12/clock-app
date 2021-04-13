@@ -8,12 +8,17 @@
   box-sizing: border-box;
   color: #ffffff;
   font-family: "Inter", sans-serif;
+  overflow: scroll;
 }
 
 /* quote section styles */
 
 .quote-container {
   padding: 20px;
+}
+
+.quote-container.hidden {
+  display: none;
 }
 
 .icon-quote-container {
@@ -41,7 +46,7 @@
 /* time and location section */
 
 .time-location-container {
-  padding: 200px 30px 30px 30px;
+  margin: 200px 30px 30px 30px;
 }
 
 .greeting-icon-container {
@@ -141,4 +146,34 @@
   text-transform: uppercase;
   margin-right: 5px;
   margin-left: 17px;
+}
+
+/* timezone drawer styles */
+
+.time-zone-drawer.expanded {
+  background: rgba(255, 255, 255, 0.75);
+  width: 100vw;
+  height: 256px;
+}
+
+.info-wrapper.hidden {
+  display: none;
+}
+
+.description {
+  color: black;
+  font-weight: 400;
+  font-size: 10px;
+}
+
+.info-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 168px;
+  padding: 40px 28px 40px 28px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 16px;
+  font-family: Inter;
 }

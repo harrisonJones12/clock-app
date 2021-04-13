@@ -19,7 +19,7 @@
 <body>
   <div class="background-container">
     <!-- quote section -->
-    <div class="quote-container">
+    <div class="quote-container" id="quote-container">
       <div class="icon-quote-container">
       <p class="quote">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam sed distinctio nisi aspernatur provident nihil?"</p>
         <i class="fas fa-sync"></i>
@@ -47,23 +47,23 @@
         </div>
         </button>
         <!-- time zone drawer -->
-        <div class="time-zone-drawer">
-            <div class="info-wrapper">
-              <div class="info-wrapper">
-              <p class="current-timezone"></p>
+        <div class="time-zone-drawer" id="time-zone-drawer">
+            <div class="info-wrapper hidden" id="info-wrapper">
+              <div class="current-timezone-wrapper">
+              <span class="current-timezone description">Current Timezone</span>
               <p class="timezone-info"></p>
             </div>
-            <div class="info-wrapper">
-              <p class="day-of-the-year"></p>
-              <p class="day-of-the-year-info"></p>
+            <div class="day-of-the-year-wrapper">
+              <span class="day-of-the-year description">Day of the Year</span>
+              <p class="day-of-the-year info"></p>
             </div>
-            <div class="info-wrapper">
-              <p class="day-of-the-week"></p>
-              <p class="day-of-the-week-info"></p>
+            <div class="day-of-the-week-wrapper">
+              <span class="day-of-the-week description">Day of the Week</span>
+              <p class="day-of-the-week info"></p>
             </div>
-            <div class="info-wrapper">
-              <p class="week-number"></p>
-              <p class="week-number-info"></p>
+            <div class="week-wrapper">
+              <span class="week-number description">Week Number</span>
+              <p class="week-number info"></p>
             </div>
           </div>
         </div>
