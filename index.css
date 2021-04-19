@@ -81,8 +81,13 @@
   letter-spacing: 5px;
 }
 
-.time-zone {
+.time-zone-drawer {
   font-weight: 100;
+  color: black;
+}
+
+.info {
+  font-weight: bold;
 }
 
 .more-less-info-button:hover {
@@ -176,4 +181,14 @@
   letter-spacing: 2px;
   font-size: 16px;
   font-family: Inter;
+}
+
+.current-timezone-wrapper,
+.day-of-the-year-wrapper,
+.day-of-the-week-wrapper,
+.week-wrapper {
+  display: flex;
+  align-items: center;
+  width: 323px;
+  justify-content: space-between;
 }
