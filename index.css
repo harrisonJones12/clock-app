@@ -90,10 +90,6 @@
   font-weight: bold;
 }
 
-.more-less-info-button:hover {
-  opacity: 0.4;
-}
-
 .more-less-info-button {
   background-color: #ddd;
   border: none;
@@ -125,6 +121,10 @@
   transform: rotate(180deg);
   transition: transform, 0.2s;
   overflow: visible;
+}
+
+.arrow-button:hover {
+  fill blue;
 }
 
 .arrow-rotated {
@@ -192,3 +192,17 @@
   width: 323px;
   justify-content: space-between;
 }
+
+@media screen and (min-width: 768px) {
+.current-timezone-wrapper,
+.day-of-the-year-wrapper,
+.day-of-the-week-wrapper,
+.week-wrapper {
+  flex-direction: column;
+  align-items: flex-start;
+  height: 35px;
+  }
+}
+
+/* Tablet styles */
+
