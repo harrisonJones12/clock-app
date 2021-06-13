@@ -193,6 +193,7 @@
   justify-content: space-between;
 }
 
+/* Tablet styles */
 @media screen and (min-width: 768px) {
 .current-timezone-wrapper,
 .day-of-the-year-wrapper,
@@ -202,7 +203,60 @@
   align-items: flex-start;
   height: 35px;
   }
-}
 
-/* Tablet styles */
+  .current-timezone-wrapper, .day-of-the-week-wrapper {
+    margin-bottom: 48px;
+  }
+
+  .description {
+    font-size: 13px;
+  }
+
+  .info {
+    font-size: 40px;
+    margin-top: 10px;
+  }
+
+  .day-of-the-week-wrapper, .day-of-the-year-wrapper, .week-wrapper {
+    width: auto;
+  }
+
+  .time-zone-drawer {
+    overflow: scroll;
+
+  }
+  .info-wrapper {
+    display: grid;
+    grid-template-areas: 
+    "a b"
+    "c d";
+    width: 569px;
+    height: 202px;
+    padding: 119px 164px 119px 64px;
+  }
+
+  .current-timezone-wrapper {
+    grid-area: a;
+  }
+
+  .day-of-the-year-wrapper {
+    grid-area: c;
+  }
+
+  .day-of-the-week-wrapper {
+    grid-area: b;
+  }
+
+  .week-wrapper {
+    grid-area: d;
+  }
+
+  .left-column {
+    margin-right: 100px;
+  }
+
+  .time-zone-drawer.expanded {
+    height: 440px;
+  }
+}
 
